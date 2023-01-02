@@ -1,11 +1,11 @@
 body.light-theme, :root {
   /* light theme color */
   --background: #fff;
-  --background-secondary: #eaeaea;
-  --header: #fafafa;
-  --color: #222;
-  --color-secondary: #999;
-  --border-color: #dcdcdc;
+  --background-secondary: #d2d7df; // #eaeaea;
+  --header: #f3f4f7; // #fafafa;
+  --color: #000; // #222;
+  --color-secondary: #000; // #999;
+  --border-color: #bdbbb0; // #dcdcdc;
 
   /* variables for js, must be the same as these in @custom-media queries */
   --phoneWidth: (max-width: 684px);
@@ -26,11 +26,11 @@ body.dark-theme {
   body:not(.dark-theme) {
     /* light theme color */
     --background: #fff;
-    --background-secondary: #eaeaea;
-    --header: #fafafa;
-    --color: #222;
-    --color-secondary: #999;
-    --border-color: #dcdcdc;
+    --background-secondary: #d2d7df; // #eaeaea;
+    --header: #f3f4f7; // #fafafa;
+    --color: #000; // #222;
+    --color-secondary: #000; // #999;
+    --border-color: #bdbbb0; // #dcdcdc;
   }
 }
 
