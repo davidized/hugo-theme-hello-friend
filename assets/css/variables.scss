@@ -5,7 +5,8 @@ body.light-theme, :root {
   --header: #f3f4f7; // #fafafa;
   --color: #000; // #222;
   --color-secondary: #000; // #999;
-  --border-color: #bdbbb0; // #dcdcdc;
+  --border-color: #8895aa; // #dcdcdc;
+  --color-link: #007FFF; //#0b4f6c;
 
   /* variables for js, must be the same as these in @custom-media queries */
   --phoneWidth: (max-width: 684px);
@@ -20,6 +21,7 @@ body.dark-theme {
   --color: #a9a9b3;
   --color-secondary: #73747b;
   --border-color: #4a4b50;
+  --color-link: #0066CC; //#0b4f6c;
 }
 
 @media (prefers-color-scheme: light) {
@@ -30,7 +32,8 @@ body.dark-theme {
     --header: #f3f4f7; // #fafafa;
     --color: #000; // #222;
     --color-secondary: #000; // #999;
-    --border-color: #bdbbb0; // #dcdcdc;
+    --border-color: #8895aa; // #dcdcdc;
+    --color-link: #007FFF; //#0b4f6c;
   }
 }
 
@@ -42,7 +45,7 @@ body.dark-theme {
     --header: #252627;
     --color: #a9a9b3;
     --color-secondary: #73747b;
-    --border-color: #4a4b50;
+    --border-color: #0066CC0;
   }
 }
 
