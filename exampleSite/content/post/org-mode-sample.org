@@ -2,8 +2,11 @@
 title: "Org-Mode Samples"
 date: 2023-01-02T08:06:25+06:00
 description: Org Mode rendering samples
-author: Jessica Jonas
+author: David Williamson
 math: true
+tags: 
+  - org-mode
+  - test
 ---
 
 * Org-Mode Syntax Rendering
