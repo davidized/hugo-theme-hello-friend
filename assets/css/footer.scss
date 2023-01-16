@@ -22,17 +22,20 @@
   }
 
   .copyright {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    //display: flex;
+    //flex-direction: row;
+    //align-items: center;
     font-size: 1rem;
+    text-align: right;
 
-    &--user {
+
+
+/*    &--user {
       margin: auto;
       text-align: center;
-    }
+    }*/
 
-    & > *:first-child:not(:only-child) {
+   & .powered > *:first-child:not(:only-child) {
       border-right: 1px solid;
       padding-right: 10px;
       margin-right: 10px;
