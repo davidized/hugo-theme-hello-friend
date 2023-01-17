@@ -4,8 +4,8 @@ theme = "hugo-theme-hello-friend"
 paginate = 5
 
 [params]
-  # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "post"
+  mainSections = ['post', 'aside']
+
   # "light" or "dark"
   defaultTheme = "dark"
   # if you set this to 0, only submenu trigger will be visible
@@ -46,9 +46,9 @@ paginate = 5
         url = "/about"
         weight = 2
       [[languages.en.menu.main]]
-        identifier = "now"
-        name = "Now"
-        url = "/now"
+        identifier = "archive"
+        name = "Archive"
+        url = "/archive"
         weight = 1
       [[languages.en.menu.main]]
         identifier = "showcase"

@@ -1,6 +1,4 @@
 {{ define "main" }}
-  {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
-  {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
 
   <article class="post">
     <h1 class="post-title">{{ .Title | markdownify }}</h1>
@@ -10,11 +8,9 @@
           {{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
         </time>
 
-        {{ if eq .Type $contentTypeName }}
           {{ if $.Site.Params.LastModDisplay }}
             {{ partial "lastmod.html" . }}
           {{ end }}
-        {{ end }}
       {{ end }}
 
       {{ with .Params.Author }}
@@ -51,7 +47,7 @@
       {{ end }}
       {{ .Content }}
     </div>
-    {{ if eq .Type $.Site.Params.contentTypeName }}
+    {{ if in $.Site.Params.mainSections .Type }}
       {{ if or .NextInSection .PrevInSection }}
         <div class="pagination">
           <div class="pagination__title">
@@ -83,9 +79,7 @@
     {{ end }}
 
     {{ if not (eq .Params.Comments "false") }}
-      {{ if or (eq .Type $.Site.Params.contentTypeName) (.Params.Comments) }}
         {{ partial "comments.html" . }}
-      {{ end }}
     {{ end }}
   </article>
 {{ end }}
